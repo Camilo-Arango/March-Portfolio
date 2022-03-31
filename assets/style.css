@@ -159,6 +159,9 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 #Skills img {
@@ -167,6 +170,10 @@ header a {
     margin: 5px; 
     float: right;
     display: block;
+}
+#Skills text {
+    display: flex;
+    max-width:200px;
 }
 
 #Projects {
