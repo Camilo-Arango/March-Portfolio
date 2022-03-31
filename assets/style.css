@@ -136,10 +136,37 @@ header a {
     text-align: center;
 }
 
-#Skills p {
-    text-align: left;
-    margin-bottom: 25px;
+#Skills div {
+    max-width: 450px;
+    max-height: 450px;
+    display: block;
+}
+
+#Skills div ul {
+    display: flex;
+}
+
+#Skills div ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
     margin-left: 100px;
+
+}
+
+#Skills div ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skills img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 5px; 
+    float: right;
+    display: block;
 }
 
 #Projects {
@@ -157,16 +184,6 @@ header a {
 .page-link {
     cursor: pointer;
 }
-
-/* .button {
-    border: 2px solid azure;
-    box-sizing: inherit;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 13pt;
-    padding: 10px 20px;
-    transition: all 0.5s;
-} */
 
 .flex-container {
     width: 100%;
