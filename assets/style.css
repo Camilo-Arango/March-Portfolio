@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', serif;
     font-size: 24px;
@@ -21,6 +25,9 @@ body {
     background-color: #f4f4f4;
 }
 
+header a {
+    margin-top: 200px;
+}
 #landing {
     background-image:url('../image/landing-image-2.jpg');
     background-size: cover;
@@ -43,7 +50,7 @@ body {
 
 #landing p {
     font-size: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 #landing .button {
@@ -65,7 +72,7 @@ body {
 
 #navbar {
     background-color: lightgray;
-}
+    }
 
 #navbar ul {
     display:flex;
@@ -74,19 +81,76 @@ body {
     font-size: 20px;
 }
 
-#section-a {
+#navbar ul li{
+    list-style: none;
+    padding: 5px 16px;
+    border-radius: 5px;
+}
+
+#navbar ul li:hover{
+    background: darkgrey;
+    color: black;
+    transition: all 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 16px 16px;
+}
+
+.content h1 {
+    text-align: left;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+#About-Me {
+    padding: 20px 20px;
+    text-align: inline;
+}
+
+#About-Me img {
+    float: right;
+    display: none;
+}
+
+#About-Me p {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+#Skills {
     padding: 20px;
     text-align: center;
 }
 
-#section-b {
+#Skills p {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+
+#Projects {
     padding: 20px;
     text-align: center;
 }
 
-#section-c {
-    padding: 20px;
-    text-align: center;
+#Projects p {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-left: 100px;
 }
 
 
@@ -107,7 +171,7 @@ body {
 .flex-container {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -117,12 +181,28 @@ body {
     display: block;
 }
 
-.flex-container input, textarea {
+.flex-container input {
     font-family: inherit;
     display: block;
     align-items: center;
-    text-align: center;
-    width: 300px;
+    text-align: left;
+    width: 350px;
+    margin-bottom: 5px;
+    height: 20px;
+    border: none;
+    font-size: 15px;
+    border-radius:5px;
+}
+
+.flex-container textarea {
+    font-family: inherit;
+    display: block;
+    align-items: center;
+    text-align: left;
+    width: 350px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 15px;
 }
 
 .flex-container form {
@@ -130,17 +210,53 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: left;
+}
+
+.flex-container div {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+#submit {
     text-align: center;
+    cursor: pointer;
 }
 
 #success {
     display: none;
 }
 
-.contact {
-    display: none;
-    flex-direction: row;
+#Contact-Me {
+    display: flex;
+    flex-direction: column;
     margin-left: 5px;
     font-weight: bolder;
+    align-items: center;
     color: darkslategrey;
+}
+
+#Contact-Me h1 {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer-icons img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.footer-icons email {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-icons github {
+    border-radius: 10px;
 }
