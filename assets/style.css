@@ -133,13 +133,13 @@ header a {
 
 #Skills {
     padding: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #Skills div {
     max-width: 450px;
     max-height: 450px;
-    display: block;
+    margin-left: 20px;
 }
 
 /* #Skills div ul {
@@ -150,10 +150,9 @@ header a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
 }
 
-div.icons {
+.items {
     vertical-align: top;
     display: inline-block;
     text-align: center;
@@ -161,7 +160,7 @@ div.icons {
 }
 
 .caption {
-    display: block;
+    flex-wrap: wrap;
 }
 
 #Skills div ul li a {
@@ -177,13 +176,10 @@ div.icons {
 #Skills img {
     max-height: 100px;
     max-width: 100px;
-    margin: 5px; 
-    float: right;
-    display: block;
-}
-#Skills text {
-    display: flex;
-    max-width:200px;
+    margin: 25px; 
+    flex-shrink: 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #Projects {
