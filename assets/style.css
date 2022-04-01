@@ -138,12 +138,10 @@ section {
 
 #Skills {
     padding: 20px;
-    text-align: left;
+    text-align: right;
 }
 
 #Skills div {
-    max-width: 450px;
-    max-height: 450px;
     margin-left: 20px;
 }
 
@@ -154,7 +152,15 @@ section {
 #Skills div ul li {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#Skills img {
+    max-width: 450px;
+    max-height: 450px;
+    flex: 1 0 450px;
 }
 
 .items {
