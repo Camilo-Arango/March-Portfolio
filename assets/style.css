@@ -21,16 +21,12 @@ body {
     margin: 0px;
     text-align: center;
     line-height: 1.6;
-    color: black;
+    color: rgb(66, 66, 66);
     background-color: #f4f4f4;
 }
 
 header a {
     margin-top: 10px;
-}
-
-section {
-    height: 800px;
 }
 
 #landing {
@@ -94,7 +90,7 @@ section {
 
 #navbar ul li:hover{
     background: darkgrey;
-    color: black;
+    color: rgb(66, 66, 66);
     transition: all 0.3s;
 }
 
@@ -110,7 +106,7 @@ section {
 
 .content h1 {
     text-align: left;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(66, 66, 66);
     width: fit-content;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -181,7 +177,7 @@ section {
     font-size: 16px;
 }
 
-#Skills div ul li a {
+#Skills div ul li div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,6 +185,7 @@ section {
     margin: 60px;
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 #Skills img {
@@ -203,14 +200,31 @@ section {
 #Projects {
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid rgb(66, 66, 66);
+    border-radius: 5px;
 }
 
-#Projects p {
+#Projects a {
     text-align: left;
     margin-bottom: 25px;
     margin-left: 100px;
+    display: block;
+    justify-self: left;
 }
 
+#Projects div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+#Projects img {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 25px; 
+}
 
 .page-link {
     cursor: pointer;
