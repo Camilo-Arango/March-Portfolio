@@ -136,45 +136,11 @@ header a {
     margin-left: 20px;
 }
 
-/* #Skills div ul {
-    display: flex;
-} */
-
 #Skills div ul li {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 150px;
-}
-
-#Skill div ul li div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#Skills img {
-    max-width: 450px;
-    max-height: 450px;
-    flex: 1 0 450px;
-}
-
-.items {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-}
-
-.items img {
-    width: 100%;
-}
-
-.caption {
-    /* flex-wrap: wrap; */
-    font-size: 16px;
 }
 
 #Skills div ul li div {
@@ -189,12 +155,31 @@ header a {
 }
 
 #Skills img {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 10vh;
+    max-width: 10vw;
     margin: 25px; 
     flex-shrink: 0;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.items {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.projects {
+    flex: 1 0 21%;
+}
+
+.caption {
+    font-size: 16px;
 }
 
 #Projects {
@@ -204,25 +189,23 @@ header a {
     border-radius: 5px;
 }
 
+#Projects div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #Projects a {
     text-align: left;
     margin-bottom: 25px;
     margin-left: 100px;
-    display: block;
-    justify-self: left;
-}
-
-#Projects div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
+    justify-self: center;
 }
 
 #Projects img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 15vh;
+    max-width: 15vw;
     margin: 25px; 
 }
 
